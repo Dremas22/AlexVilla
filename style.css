@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    border-bottom: lightgray;
+    /* position: fixed; */
+    background-color: rgba(211, 211, 211, 0.5); /* Use rgba for transparency */
+    
+}
+
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-left: 150px;
+   
+}
+
+.gradient-heading {
+    background-color: lightblue;
+    background: -webkit-linear-gradient(to bottom, #B3E0FF 10%, #130f40 100%);
+    background: linear-gradient(to bottom, #B3E0FF 10%, #130f40 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Standard property */
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 45px;
+}
+
+.navIconsContainer {
+    display: flex;
+    align-items: center;
+
+}
+
+.iconsDiv {
+    margin-left: 300px;
+    align-items: center;
+
+}
+
+.iconsContents {
+    margin: 5px;
+}
+
+.iconsContents1  {
+    
+    width: 140px;
+    font-weight: bolder;
+    
+
+}
+
+.iconsContents2 {
+    width: 88px;
+    font-weight: bolder;
+
+}
+
+.fa-phone {
+    color: #273c75;
+    margin: 2px
+}
+
+.fa-square-x-twitter, .fa-linkedin {
+    font-size: 34px;
+}
+
+.fa-linkedin {
+    color: #1e3799
+}
+
+.instaLogo {
+    
+    height: 50px;
+    width: 40px;
+    margin-top: 13px;
+}
+
+.youtubeLogo {
+    height: 37px;
+    width: 37px;
+    margin-top: 6px;
+}
+
+.bodyHeading {
+    text-align: center;
+    padding: 10px;
+    background-color: #46598d;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.bodyContainer1 {
+    display: flex;
+    margin: 20px 0 0 150px
+}
+
+.webinarContents {
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin-left: 250px;
+    font-weight: bolder;
+}
+
+.webinarContents h2 span {
+    color: #feca57;
+}
