@@ -50,7 +50,8 @@
 .navListMenu:hover {
     border-bottom: 3px solid #6a89cc;
     transition: 0.2s;
-    color: #6a89cc
+    color: #6a89cc;
+    cursor: pointer;
 }
 
 .navMenuContainer2 {
@@ -131,7 +132,100 @@
     margin-top: 6px;
 }
 
-.bodyHeading {
+.fa-square-x-twitter:hover, 
+.fa-linkedin:hover,
+.instaLogo:hover,
+.youtubeLogo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3ms ease-out;
+}
+
+.businessOppDiv {
+display: none;
+}
+
+ .businessOppContainer {
+
+}
+
+.getStartedBtn {
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+    background-color: #46598d;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+}
+
+.getStartedBtn:hover {
+    cursor: pointer;
+    background-color: #1e3799;
+    transition: 0.3ms;
+}
+
+.fa-arrow-right {
+    color: #46598d;
+    border: 2px solid white;
+    border-radius: 100%;
+    background: #fff;
+    font-weight: bolder;
+}
+
+.whatDiv {
+    display: none;
+    text-align: center;
+    background-color: #CAD3C8;
+    font-weight: bolder;
+    width: 100%;
+    height: 450px
+}
+
+.whatDiv h1 {
+    padding-top: 50px;
+    font-weight: bolder;
+}
+
+.whatDiv .getStartedBtn {
+    margin-top: 20px;
+}
+
+.whatGrid {
+    margin: 20px 0 0 100px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    column-gap: 40px;
+}
+
+.whatGridContents {
+    background: grey;
+    width: 350px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.whatHeader {
+    color: white;
+    background: black;
+    width: 100%;
+    text-align: center;
+    
+    font-size: large;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.whatContents {
+    margin-top: 30px;
+    color: #2f3542;
+}
+
+.bodyHeading, .businessOppHeading {
     text-align: center;
     padding: 10px;
     background-color: #46598d;
@@ -140,7 +234,7 @@
     font-size: 26px;
 }
 
-.bodyContainer1 {
+.bodyContainer1, .businessOppContainer, .conatactUsContents {
     display: flex;
     margin: 20px 0 0 150px
 }
@@ -149,16 +243,23 @@
     display: none
 }
 
-.webinarContents {
+.webinarContents, .businessContents,
+.conatactUsForm, .timeDiv {
     width: 500px;
     height: 300px;
     text-align: center;
-    margin-left: 150px;
+    margin-left: 50px;
     font-weight: bolder;
 }
 
 .webinarContents h2 span {
     color: #feca57;
+}
+
+.formDiv {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero {
@@ -204,7 +305,7 @@
 }
 
 .subscribeBtn {
-    width: 80%;
+    width: 350px;
     height: 60px;
     text-align: center;
     margin-top: 80px;
@@ -214,6 +315,12 @@
     font-weight: bolder;
     border: none;
     border-radius: 5px;
+}
+
+.subscribeBtn:hover {
+    cursor: pointer;
+    background-color: #1e3799;
+    transition: 0.3ms;
 }
 
 .infoSubDiv button:hover {
@@ -284,11 +391,9 @@
     justify-content: center;
 }
 
-
 .swiper-slide {
     width: 100px;
     height: 100%;
-
 }
 
 .swiperContent {
@@ -303,21 +408,22 @@
     border-radius: 10px;
 }
 
-.fa-circle-chevron-right, .fa-circle-chevron-left { 
+.fa-circle-chevron-right,
+.fa-circle-chevron-left {
     font-size: 30px;
     margin: 5px;
-   
+
 }
 
 .fa-circle-chevron-left:hover {
     cursor: pointer;
-    color:#46598d;
+    color: #46598d;
     transition: 0.3s;
 }
 
 .fa-circle-chevron-right:hover {
     cursor: pointer;
-    color:#46598d;
+    color: #46598d;
     transition: 0.3s;
 }
 
@@ -334,12 +440,181 @@
 .btnReviews:hover {
     background: #46598d;
     width: 200px;
-    
     cursor: pointer;
     transition: 0.3s;
 }
 
 .buttonsSlider {
     align-items: center;
-    margin-right: 80px; 
+    margin-right: 80px;
+}
+
+.services {
+    
+    background-color: #CAD3C8;
+    width: 100%;
+    height: 250px
+}
+
+.services h2 {
+    padding-top: 40px;
+}
+
+.imagesContainer {
+
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background: #1e272e;
+}
+
+.imagesGrid1 {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    gap: 5px;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+.imagesGrid2 {
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 5px;
+    padding-top: 10px;
+    margin-left: 358px;
+}
+
+.imagesContent {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    background: #a5b1c2;
+    border: 1px solid #fff;
+}
+
+.imagesContent:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+
+}
+
+.whyDiv {
+    /* margin-top: 30px; */
+    background-color: #CAD3C8;
+    font-weight: bolder;
+    width: 100%;
+    height: 250px
+}
+
+.whyDiv h1 {
+
+    padding-top: 40px;
+}
+
+.footer {
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gray; */
+}
+
+.footerHeading {
+    text-align: center;
+    padding: 10px;
+    background-color: #46598d;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 27px;
+}
+
+.footerContainer1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.footerContainer1 ul {
+    display: flex;
+    padding: 15px 0 0 340px;
+    color: #bdc3c7;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.840);
+    list-style: none;
+    font-size: small;
+}
+
+.footerContainer1 ul li {
+    margin: 13px;
+    text-decoration: none;
+}
+
+.footerContainer2 {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.884);
+    color: #bdc3c7;
+
+}
+
+.footerContents {
+    width: 300px;
+    height: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0 100px;
+}
+
+.footerContents1 {
+    margin-top: 25px;
+}
+
+.footerContents1 .fa-phone {
+    color: #bdc3c7;
+}
+
+.footerContents1 a {
+    text-decoration: none;
+    color: #bdc3c7;
+    font-size: small;
+}
+
+.footerContents2 {
+    text-align: left;
+    width: 176px;
+    margin: 15px 0 0 80px;
+    font-size: small;
+}
+
+.footerContents2 span {
+    color: #6a89cc
+}
+
+.footerContainer3 {
+    border-top: 1px solid #ecf0f111;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.884);
+    color: #ecf0f148;
+    font-size: small;
+    
+}
+
+.footerContainer3 span {
+    margin-left: 4px;
 }
