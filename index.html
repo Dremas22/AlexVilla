@@ -25,11 +25,11 @@
 
                 <div class="navIconsContainer">
                     <div class="navMenuContainer1">
-                        <div class="navListMenu">HOME</div>
-                        <div class="navListMenu">BUSINESS OPPORTUNITY</div>
-                        <div class="navListMenu">WEBINAR</div>
-                        <div class="navListMenu">SUBSCRIBE</div>
-                        <div class="navListMenu">CONTACT US</div>
+                        <div class="navListMenu" id="home" onclick="displayContent()">HOME</div>
+                        <div class="navListMenu" id="business" onclick="displayContent()">BUSINESS OPPORTUNITY</div>
+                        <div class="navListMenu" id="webinar" onclick="displayContent()">WEBINAR</div>
+                        <div class="navListMenu" id="subscribe" onclick="displayContent()">SUBSCRIBE</div>
+                        <div class="navListMenu" id="contactUs" onclick="displayContent()">CONTACT US</div>
                     </div>
                     <div class="navMenuContainer2">
                         <div class="iconsContents1">
@@ -38,7 +38,8 @@
                         <div class="iconsContainer">
                             <div class="iconsContents2">Follow Us:</div>
                             <div class="iconsContents">
-                                <a href="https://www.instagram.com/"><img src="./images/iglogo1.png" class="instaLogo" /></a>
+                                <a href="https://www.instagram.com/"><img src="./images/iglogo1.png"
+                                        class="instaLogo" /></a>
                             </div>
                             <div class="iconsContents">
                                 <a href="https://www.twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
@@ -47,9 +48,10 @@
                                 <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                             <div class="iconsContents">
-                                <a href="https://www.youtube.com/"><img src="./images/YouTube.png" class="youtubeLogo" /></a>
+                                <a href="https://www.youtube.com/"><img src="./images/YouTube.png"
+                                        class="youtubeLogo" /></a>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -190,14 +192,12 @@
                 <button class="getStartedBtn">GET STARTED NOW! <i class="fa-solid fa-arrow-right"></i> </button>
             </div>
 
-                <div class="videoConatainer1">
-                    <iframe width="500" height="240" src="https://www.youtube.com/embed/S97xeD0lyxQ"
-                        title="TRADE LIKE CRAZY | Live CEO Q &amp; A Opportunity Presentation (POWERFUL)" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+            <div class="videoConatainer1">
+                <iframe width="500" height="240" src="https://www.youtube.com/embed/S97xeD0lyxQ"
+                    title="TRADE LIKE CRAZY | Live CEO Q &amp; A Opportunity Presentation (POWERFUL)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
             picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                    </iframe>
-                </div>
-
+                </iframe>
             </div>
 
         </div>
@@ -237,7 +237,9 @@
             </div>
 
             <button class="getStartedBtn">GET STARTED NOW! <i class="fa-solid fa-arrow-right"></i> </button>
+
         </div>
+
 
     </div>
 
@@ -263,7 +265,7 @@
 
     </div>
 
-    <div class="constactUsDiv">
+    <div class="contactUsDiv">
 
         <div class="bodyHeading">
             Contact: Alex Villa
@@ -271,17 +273,24 @@
         <div class="conatactUsContents">
             <div class="conatactUsForm">
                 <div>
-                    <h3>Content</h3>
+                    <h3>Content 1</h3>
                 </div>
                 <div class="formDiv">
-                    <input type="text" placeholder="Name" required/>
-                    <input type="text" placeholder="Name" required/>
-                    <input type="number" placeholder="Cell Number" required/>
-                    <textarea type="text" placeholder="type here..." required></textarea>
+
+                    <form class="form">
+                        <input type="text" placeholder="Name" class="inputs" required />
+                        <input type="email" placeholder="Email" class="inputs" required />
+                        <input type="number" placeholder="Cell Number" class="inputs" required />
+                        <textarea type="text" class="textArea" placeholder="Type here..." required></textarea>
+
+                    </form>
+                    <button class="submitBtn">Submit</button>
 
                 </div>
             </div>
-            <div class="timeDiv"></div>
+            <div class="timeDiv">
+                <h3>Content 2</h3>
+            </div>
         </div>
 
     </div>
@@ -293,15 +302,15 @@
         </div>
 
         <div class="footerContainer1">
-            <ul>
-                <li>Home</li>
-                <li>Business Opportunity</li>
-                <li>Webinar</li>
-                <li>Subscribe</li>
-                <li>Contact Us</li>
-                <li>Private Policy</li>
-                <li>Site Map</li>
-            </ul>
+            <div class="footerMenu">
+                <div class="footerList" id="homeFooter" onclick="showContents()">HOME</div>
+                <div class="footerList" id="businessFooter" onclick="showContents()">BUSINESS OPPORTUNITY</div>
+                <div class="footerList" id="webinarFooter" onclick="showContents()">WEBINAR</div>
+                <div class="footerList" id="subscribe" onclick="showContents()">SUBSCRIBE</div>
+                <div class="footerList" id="contactUsFooter" onclick="showContents()">CONTACT US</div>
+                <div class="footerList">Site Map</div>
+                <div class="footerList">Private Policy</div>
+            </div>
         </div>
 
         <div class="footerContainer2">
@@ -316,8 +325,8 @@
             <div class="footerContents">
                 <h3>Business Hours</h3>
                 <div class="footerContents2">
-                <span>Today  9:00 AM - 9:00 PM</span>
-                    Mon - Sun  9:00 AM - 9:00 PM
+                    <span>Today 9:00 AM - 9:00 PM</span>
+                    Mon - Sun 9:00 AM - 9:00 PM
                 </div>
             </div>
 
@@ -341,7 +350,7 @@
 
         </div>
 
-        
+
 
         <div class="footerContainer3">
             <i class="fa-regular fa-copyright"></i>

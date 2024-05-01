@@ -141,7 +141,7 @@
 }
 
 .businessOppDiv {
-display: none;
+/* display: none; */
 }
 
  .businessOppContainer {
@@ -240,11 +240,11 @@ display: none;
 }
 
 .webinarDiv {
-    display: none
+    /* display: none */
 }
 
 .webinarContents, .businessContents,
-.conatactUsForm, .timeDiv {
+ .timeDiv {
     width: 500px;
     height: 300px;
     text-align: center;
@@ -256,10 +256,90 @@ display: none;
     color: #feca57;
 }
 
+.constactUsDiv {
+    /* display: none; */
+}
+
+.conatactUsForm {
+    width: 480px;
+    height: 300px;
+    text-align: center;
+    margin-left: 50px;
+    font-weight: bolder;
+}
+
+.conatactUsContents {
+    height: 600px
+}
+
 .formDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #a5b1c2;
+    box-shadow: 0 0 5px 0 rgba(165, 177, 194, 10);
+    height: 430px;
+    border-radius: 55px;
+    background-color: #46598d;
+}
+
+.form {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
+    width: 400px;
+}
+
+.inputs {
+    margin: 5px;
+    height: 40px;
+    border: 1px solid #a5b1c2;
+    border-radius: 5px;
+    color: #2f3542;
+    font-size: medium;
+}
+
+.inputs::placeholder {
+    padding-left: 7px;
+    font-size: large;
+    color: #d1ccc0;
+}
+
+.textArea {
+    margin: 5px;
+    height: 160px;
+    border: 1px solid #a5b1c2;
+    border-radius: 5px;
+    color: #2f3542;
+    font-size: medium;
+}
+
+.textArea::placeholder {
+    padding-left: 7px;
+    font-size: large;
+    color: #d1ccc0;
+}
+
+.submitBtn {
+    margin-top: 10px;
+    width: 150px;
+    font-size: 25px;
+    font-weight: bolder;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color:#a5b1c2;
+    color:#1e3799;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+    color:#46598d;
+    transform: scale(1.1);
+    transition: transform 0.3ms ease-out;
 }
 
 .hero {
@@ -404,7 +484,7 @@ display: none;
     align-items: center;
     justify-content: center;
     background: rgba(202, 211, 200, 0.5);
-    margin: 0 0 0 120px;
+    margin: 0 0 0 160px;
     border-radius: 10px;
 }
 
@@ -446,7 +526,7 @@ display: none;
 
 .buttonsSlider {
     align-items: center;
-    margin-right: 80px;
+    /* margin-right: 10px; */
 }
 
 .services {
@@ -543,7 +623,7 @@ display: none;
     
 }
 
-.footerContainer1 ul {
+.footerMenu {
     display: flex;
     padding: 15px 0 0 340px;
     color: #bdc3c7;
@@ -553,9 +633,14 @@ display: none;
     font-size: small;
 }
 
-.footerContainer1 ul li {
+.footerList {
     margin: 13px;
-    text-decoration: none;
+    
+}
+
+.footerList:hover {
+    cursor: pointer;
+    color: #fff;
 }
 
 .footerContainer2 {

@@ -1,22 +1,122 @@
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    autoplay: {
-        delay: 4000,
-        disableOninteraction: false,
-    },
-    loop: true,
+  // Optional parameters
+  autoplay: {
+    delay: 4000,
+    disableOninteraction: false,
+  },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.fa-circle-chevron-left',
+    prevEl: '.fa-circle-chevron-right',
+  },
+
+
+});
+
+const home = document.getElementById('home');
+const business = document.getElementById('business');
+const webinar = document.getElementById('webinar');
+const contact = document.getElementById('contactUs');
+
+const footerHome = document.getElementById('homeFooter');
+const footerBusiness = document.getElementById('businessFooter');
+const footerWebinar = document.getElementById('webinarFooter');
+const footerConatactUs = document.getElementById('contactUsFooter');
+
+const homePage = document.querySelector('.homePageDiv');
+const businessOppContent = document.querySelector('.businessOppDiv')
+const webinarContent = document.querySelector('.webinarDiv');
+const contactUsContent = document.querySelector('.contactUsDiv')
+
+function displayContents() {
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.fa-circle-chevron-left',
-      prevEl: '.fa-circle-chevron-right',
-    },
-  
-    
-  });
+
+  if (homePage) {
+    home.addEventListener('click', () => {
+      homePage.style.display = 'block'
+      businessOppContent.style.display = 'none';
+      webinarContent.style.display = 'none';
+      contactUsContent.style.display = 'none';
+    })
+  };
+
+  if (businessOppContent) {
+    business.addEventListener('click', () => {
+      businessOppContent.style.display = 'block';
+      homePage.style.display = 'none';
+      webinarContent.style.display = 'none';
+      contactUsContent.style.display = 'none';
+    })
+  };
+
+  if (webinar) {
+    webinar.addEventListener('click', () => {
+      webinarContent.style.display = 'block';
+      homePage.style.display = 'none';
+      businessOppContent.style.display = 'none';
+      contactUsContent.style.display = 'none';
+    })
+  };
+
+  if (contact) {
+    contact.addEventListener('click', () => {
+      contactUsContent.style.display = 'block';
+      homePage.style.display = 'none';
+      businessOppContent.style.display = 'none';
+      webinarContent.style.display = 'none';
+    })
+  };
+
+
+};
+
+function showContents() {
+
+  if (homePage) {
+    footerHome.addEventListener('click', () => {
+      homePage.style.display = 'block'
+      businessOppContent.style.display = 'none';
+      webinarContent.style.display = 'none';
+      contactUsContent.style.display = 'none';
+    })
+  };
+
+  if (businessOppContent) {
+    footerBusiness.addEventListener('click', () => {
+      businessOppContent.style.display = 'block';
+      homePage.style.display = 'none';
+      webinarContent.style.display = 'none';
+      contactUsContent.style.display = 'none';
+    })
+  };
+
+  if (webinar) {
+    footerWebinar.addEventListener('click', () => {
+      webinarContent.style.display = 'block';
+      homePage.style.display = 'none';
+      businessOppContent.style.display = 'none';
+      contactUsContent.style.display = 'none';
+    })
+  };
+
+  if (contact) {
+    footerConatactUs.addEventListener('click', () => {
+      contactUsContent.style.display = 'block';
+      homePage.style.display = 'none';
+      businessOppContent.style.display = 'none';
+      webinarContent.style.display = 'none';
+    })
+  };
+
+}
+
+displayContents(); showContents();
+
