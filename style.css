@@ -199,6 +199,11 @@
     font-weight: bolder;
 }
 
+.iconsContents1 a {
+    text-decoration: none;
+    color: #000;
+}
+
 .iconsContents2 {
     width: 88px;
     font-size: 18px;
@@ -208,6 +213,11 @@
 .fa-phone {
     color: #6a89cc;
     margin: 2px
+}
+
+.footerContents1 a {
+    text-decoration: none;
+    color: #bdc3c7;
 }
 
 .fa-square-x-twitter,
