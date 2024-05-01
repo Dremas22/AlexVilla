@@ -16,7 +16,19 @@
 
 <body>
 
-
+    <div class="overlay" id="overlay">
+        
+        <div class="formDiv1">
+            <form class="form1">
+                <input type="text" placeholder="Name" class="inputs1" required />
+                <input type="email" placeholder="Email" class="inputs1" required />
+                <input type="number" placeholder="Cell Number" class="inputs1" required />
+                <textarea type="text" class="textArea1" placeholder="Type here..." required></textarea>
+            </form>
+            <i class="fa-solid fa-xmark" onclick="cancelOverlay()"></i>
+            <button class="submitBtn1">Submit</button>
+        </div>
+    </div>
 
     <div class="navbar">
         <div class="navbarContainer">
@@ -81,7 +93,7 @@
             </div>
             <div class="infoSubDiv">
                 <h1>Content 2</h1>
-                <button class="subscribeBtn">SUBSCRIBE NOW WITH ALEX VILLA </button>
+                <button class="subscribeBtn" onclick="showOverlay()">SUBSCRIBE NOW WITH ALEX VILLA </button>
             </div>
         </div>
 
@@ -93,7 +105,7 @@
 
                 <div class="featuresContent">
                     <h2>Content 1</h2>
-                    <button class="subscribeBtn">SUBSCRIBE NOW WITH ALEX VILLA </button>
+                    <button class="subscribeBtn" onclick="showOverlay()">SUBSCRIBE NOW WITH ALEX VILLA </button>
                 </div>
 
                 <div class="featuresContent">
@@ -157,7 +169,7 @@
         <div class="services">
             <h2>SERVICES CONTENT</h2>
             <div>
-                <button class="subscribeBtn">SUBSCRIBE NOW WITH ALEX VILLA </button>
+                <button class="subscribeBtn" onclick="showOverlay()">SUBSCRIBE NOW WITH ALEX VILLA </button>
             </div>
 
         </div>
@@ -177,7 +189,7 @@
 
         <div class="whyDiv">
             <h1>WHY CONTENT</h1>
-            <button class="subscribeBtn">SUBSCRIBE NOW WITH ALEX VILLA </button>
+            <button class="subscribeBtn" onclick="showOverlay()">SUBSCRIBE NOW WITH ALEX VILLA </button>
         </div>
 
     </div>
@@ -189,7 +201,7 @@
         <div class="businessOppContainer">
             <div class="businessContents">
                 <h1>CONTENT 1</h1>
-                <button class="getStartedBtn">GET STARTED NOW! <i class="fa-solid fa-arrow-right"></i> </button>
+                <button class="getStartedBtn" onclick="showOverlay()">GET STARTED NOW! <i class="fa-solid fa-arrow-right"></i> </button>
             </div>
 
             <div class="videoConatainer1">
@@ -236,7 +248,7 @@
 
             </div>
 
-            <button class="getStartedBtn">GET STARTED NOW! <i class="fa-solid fa-arrow-right"></i> </button>
+            <button class="getStartedBtn" onclick="showOverlay()">GET STARTED NOW! <i class="fa-solid fa-arrow-right"></i> </button>
 
         </div>
 
@@ -271,10 +283,13 @@
             Contact: Alex Villa
         </div>
         <div class="conatactUsContents">
+
             <div class="conatactUsForm">
+
                 <div>
                     <h3>Content 1</h3>
                 </div>
+
                 <div class="formDiv">
 
                     <form class="form">
@@ -284,13 +299,16 @@
                         <textarea type="text" class="textArea" placeholder="Type here..." required></textarea>
 
                     </form>
-                    <button class="submitBtn">Submit</button>
+                    <button class="submitBtn" onclick="showOverlay()">Submit</button>
 
                 </div>
+
             </div>
+
             <div class="timeDiv">
                 <h3>Content 2</h3>
             </div>
+
         </div>
 
     </div>

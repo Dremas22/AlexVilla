@@ -21,6 +21,7 @@ const swiper = new Swiper('.swiper', {
 
 });
 
+const body = document.querySelector('body');
 const home = document.getElementById('home');
 const business = document.getElementById('business');
 const webinar = document.getElementById('webinar');
@@ -36,8 +37,23 @@ const businessOppContent = document.querySelector('.businessOppDiv')
 const webinarContent = document.querySelector('.webinarDiv');
 const contactUsContent = document.querySelector('.contactUsDiv')
 
+window.onload = function () {
+    homePage.style.display = 'block';
+    businessOppContent.style.display = 'none';
+    webinarContent.style.display = 'none';
+    contactUsContent.style.display = 'none';  
+};
+
+function showOverlay() {
+  document.getElementById("overlay").style.display = "flex";
+};
+
+function cancelOverlay() {
+  document.getElementById("overlay").style.display = "none";
+};
+
+
 function displayContents() {
-  
 
   if (homePage) {
     home.addEventListener('click', () => {
@@ -119,4 +135,5 @@ function showContents() {
 }
 
 displayContents(); showContents();
+
 
