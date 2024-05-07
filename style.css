@@ -131,10 +131,10 @@
     width: 100%;
     border-bottom: lightgray;
     background-color: rgba(211, 211, 211, 0.5);
-    position: fixed; /* Make the navbar fixed */
-    top: 0; /* Position it at the top of the viewport */
-    left: 0; /* Position it at the left of the viewport */
-    z-index: 1000
+    /* position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 1000 */
     
     /* Use rgba for transparency */
 
@@ -371,7 +371,7 @@
     margin-top: 30px;
     color: #2f3542;
 }
-.bodyHeading h1,
+.bodyHeading1 h1,
 .businessOppHeading h1 {
     text-align: center;
     padding: 10px;
@@ -398,13 +398,16 @@
 .webinarContents h2 span {
     color: #feca57;
 }
+.contactUsDiv {
+    height: 600px;
+}
 .contactUsForm {
     width: 480px;
     height: 300px;
     text-align: center;
     margin-left: 50px;
     font-weight: bolder;
-}
+} 
 .formDiv {
     display: flex;
     flex-direction: column;
