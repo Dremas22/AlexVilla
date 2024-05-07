@@ -2,7 +2,6 @@
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
-
 .overlay {
 
     position: fixed;
@@ -16,7 +15,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .mobileOverlay {
     position: fixed;
     top: 0;
@@ -29,7 +27,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .navMobileMenu {
     display: flex;
     flex-direction: column;
@@ -39,7 +36,6 @@
     background: rgba(165, 177, 194, 0.7);
     width: 200px;
 }
-
 .navMobileMenu button {
     margin: 10px;
     border: none;
@@ -51,12 +47,10 @@
     border-radius: 5px;
 
 }
-
 .navMobileMenu button:hover {
     background-color: #46598d;
     cursor: pointer;
 }
-
 .formDiv1 {
     display: flex;
     flex-direction: column;
@@ -71,7 +65,6 @@
     border-radius: 55px;
     background-color: #46598d;
 }
-
 .form1 {
 
     margin-top: 10px;
@@ -79,7 +72,6 @@
     flex-direction: column;
     width: 400px;
 }
-
 .inputs1 {
     margin: 5px;
     height: 40px;
@@ -88,13 +80,11 @@
     color: #2f3542;
     font-size: medium;
 }
-
 .inputs1::placeholder {
     padding-left: 7px;
     font-size: large;
     color: #d1ccc0;
 }
-
 .textArea1 {
     margin: 5px;
     height: 160px;
@@ -103,13 +93,11 @@
     color: #2f3542;
     font-size: medium;
 }
-
 .textArea1::placeholder {
     padding-left: 7px;
     font-size: large;
     color: #d1ccc0;
 }
-
 .submitBtn1 {
     margin-top: 10px;
     width: 150px;
@@ -121,14 +109,12 @@
     background-color: #a5b1c2;
     color: #1e3799;
 }
-
 .submitBtn1:hover {
     cursor: pointer;
     color: #46598d;
     transform: scale(1.1);
     transition: transform 0.3ms ease-out;
 }
-
 .fa-xmark {
     position: absolute;
     font-size: 25px;
@@ -136,26 +122,27 @@
     background: #130f40;
     margin: 0 0 400px 410px
 }
-
 .fa-xmark:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: trnasform 0.3ms ease-out;
 }
-
 .navbar {
     width: 100%;
     border-bottom: lightgray;
     background-color: rgba(211, 211, 211, 0.5);
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Position it at the left of the viewport */
+    z-index: 1000
+    
     /* Use rgba for transparency */
 
 }
-
 .homePageDiv {
     text-align: center;
     /* display: none */
 }
-
 .navbarContainer {
     display: flex;
     align-items: center;
@@ -163,7 +150,6 @@
     margin-left: 100px;
 
 }
-
 .navIconsContainer {
     display: flex;
     flex-direction: column;
@@ -171,7 +157,6 @@
     margin-left: 50px;
 
 }
-
 .navMenuContainer1 {
     display: flex;
     align-items: center;
@@ -180,20 +165,17 @@
     margin-bottom: -20px;
     /* background-color: #feca57; */
 }
-
 .navListMenu {
     margin: 10px;
     font-weight: bolder;
     font-size: 19px;
 }
-
 .navListMenu:hover {
     border-bottom: 3px solid #6a89cc;
     transition: 0.2s;
     color: #6a89cc;
     cursor: pointer;
 }
-
 .navMenuContainer2 {
     display: flex;
     align-items: center;
@@ -201,28 +183,27 @@
     margin-left: 80px;
 
 }
-
 .navMobile {
     display: none;
     background-color: #000;
     border-bottom: 2px solid #1e3799;
+    /* position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000 */
 
 }
-
 .navMobileContents {
     display: flex;
     height: 50px;
 }
-
 .navMobileContents .fa-phone {
     color: #fff
 }
-
 .navMobileContents a {
     text-decoration: none;
     color: #fff
 }
-
 .menu {
     /* display: none; */
     display: block;
@@ -234,13 +215,11 @@
     height: 25px;
     border-radius: 5px;
 }
-
 .menu:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: transform 0.3ms ease-out;
 }
-
 .line {
     margin: 5px;
     width: 60%;
@@ -248,14 +227,12 @@
     /* Adjust line thickness as needed */
     background-color: #fff;
 }
-
 .mobileHeading {
     display: none;
     width: 250px;
     color: #1e3799;
     font-size: 45px;
 }
-
 .gradient-heading {
     background-color: lightblue;
     background: -webkit-linear-gradient(to bottom, #B3E0FF 10%, #130f40 100%);
@@ -267,13 +244,11 @@
     display: inline-block;
     font-size: 45px;
 }
-
 .iconsDiv {
     /* margin-left: 50px; */
     align-items: center;
 
 }
-
 .iconsContainer {
     display: flex;
     align-items: center;
@@ -324,7 +299,6 @@
     width: 37px;
     margin-top: 6px;
 }
-
 .fa-square-x-twitter:hover,
 .fa-linkedin:hover,
 .instaLogo:hover,
@@ -408,7 +382,7 @@
 }
 .bodyContainer1,
 .businessOppContainer,
-.conatactUsContents {
+.contactUsContents {
     display: flex;
     margin: 20px 0 0 150px
 }
@@ -424,15 +398,12 @@
 .webinarContents h2 span {
     color: #feca57;
 }
-.conatactUsForm {
+.contactUsForm {
     width: 480px;
     height: 300px;
     text-align: center;
     margin-left: 50px;
     font-weight: bolder;
-}
-.conatactUsContents {
-    height: 600px
 }
 .formDiv {
     display: flex;
@@ -543,7 +514,19 @@
     border: none;
     border-radius: 5px;
 }
-.subscribeBtn:hover {
+.subscribeBtn1 {
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+    background-color: #46598d;
+    color: #fff;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+}
+.subscribeBtn:hover, .submitBtn1:hover {
     cursor: pointer;
     background-color: #1e3799;
     transition: 0.3ms;
@@ -737,7 +720,6 @@
     padding: 15px 0 0 340px;
     color: #bdc3c7;
     height: 80px;
-    
     list-style: none;
     font-size: small;
 }
@@ -754,7 +736,6 @@
     height: 120px;
     background-color: rgba(0, 0, 0, 0.884);
     color: #bdc3c7;
-
 }
 .footerContents {
     width: 300px;
@@ -795,7 +776,6 @@
     background: rgba(0, 0, 0, 0.884);
     color: #ecf0f148;
     font-size: small;
-
 }
 .footerContainer3 span {
     margin-left: 4px;
@@ -812,9 +792,14 @@
         display: none;
     }
     .navMobile {
+        
         display: block;
         background-color: #000;
         width: 100%;
+        /* position: fixed; 
+        top: 0; 
+        left: 0; 
+        z-index: 2000; */
     }
     .mobileHeading {
         display: block;
@@ -853,14 +838,20 @@
         width: auto;
         height: 450px;
         margin: 510px 0 0 0;
-        background-color: none;
-
+        background-color: #fff;
+        border: none;
     }
     .subscribeBtn {
         width: 210px;
         font-size: 12px;
         height: 40px;
-        margin-right: 105px;
+        margin-right: 102px;
+    }
+    .subscribeBtn1 {
+        width: 210px;
+        font-size: 12px;
+        height: 40px;
+        margin-right: 20px;
     }
     .infoSubDiv {
         text-align: center;
@@ -872,6 +863,10 @@
     .infoSubDiv h1 {
         margin-right: 95px;
     }
+    .features {
+        width: 212px;
+        margin-left: 6px;
+    }
     .featuresContent {
         text-align: center;
         width: 300px;
@@ -881,12 +876,12 @@
         margin-right: 80px;
     }
     .featuresHeader {
-        margin-right: 90px;
+        font-size: 16px;
     }
     .featuresContent iframe {
         height: 200px;
         width: 200px;
-        margin-right: 75px;
+        margin-right: 20px;
     }
     .featuresDiv2 {
         display: flex;
@@ -926,14 +921,19 @@
     .fa-circle-chevron-left {
         font-size: 20px;
     }
-    .services h2 {
-        margin-right: 100px;
+    .services {
+        text-align: center;
+        width: 210px;
+        margin-left: 10px;
     }
     .imagesContainer {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
+        width: 210px;
+        margin-left: 5px;
+        background-color: #fff;
     }
     .imagesGrid1, .imagesGrid2 {
         display: flex;
@@ -943,15 +943,21 @@
         margin-right: 90px;
     }
     .imagesGrid2 {
-        margin-right: 530px;
+        margin-right: 485px;
     }
     .imagesContent {
         width: 200px;
         height: 250px;
     }
+    .whyDiv {
+        width: 210px;
+        margin-left: 3px;
+    }
     .whyDiv h1 {
-        font-size: large;
-        margin-right: 100px;
+        font-size: medium;
+    }
+    .footer {
+        width: 221px;
     }
     .footerHeading h1{
         font-size: medium;
@@ -960,11 +966,12 @@
         /* margin-right: 20px; */
     }
     .footerContainer1 {
-        width: 100%;
+        width: 220px;
     }
     .footerContainer2 {
         display: flex;
         flex-direction: column;
+        width: 220px;
     }
     .footerMenu {
         display: grid;
@@ -981,7 +988,10 @@
     .footerContents {
         text-align: center;
         align-items: center;
-        margin-right: 180px;
+        margin-right: 100px;
+    }
+    .footerContainer3 {
+        width: 220px;
     }
     .iconsContainer2 {
         margin-left: 60px;
@@ -997,18 +1007,29 @@
     }
     .businessOppHeading {
         background-color:#46598d;
+        width: 213px;
+        margin-left: 1px;
     }
     .businessOppHeading h1 {
         font-size: medium;
         margin-left: 20px;
         width: 150px;
     }
+    .businessContents h1 {
+        margin-left: 30px;
+    }
     .businessContents {
-        margin-left: -120px;
+        text-align: center;
+        width: 190px;
+        margin-left: 5px;
     }
     .videoContainer1 iframe {
         width: 170px;
         height: 110px;
+        margin-left: 7px;
+    }
+    .whatDiv {
+        width: 210px;
     }
     .whatGrid {
         display: flex;
@@ -1038,7 +1059,7 @@
         width: 180px;
         height: 60px;
         font-size: 15px;
-        margin-right: 60px;
+        margin-right: 50px;
     }
     .bodyContainer1 {
         display: flex;
@@ -1046,10 +1067,12 @@
         text-align: center;
         align-items: center;
         margin-right: 250px;
-        background-color: yellow;
+        ;
     }
     .bodyHeading {
         background-color: #46598d;
+        width: 213px;
+        margin-left: 2px;
     }
     .bodyHeading h1 {
         font-size: large;
@@ -1066,36 +1089,71 @@
     .videoContainer1 iframe {
         width: 180px;
     }
-    .footerContainer3 span {
-        margin-right: 100px;
+    .contactUsDiv {
+        margin-left: 50px;
     }
-    .conatactUsContents {
+    .contactUsContents {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-left: 10px;
+        width: 211px;
     }
-
+    .bodyHeading1 {
+        background-color: #46598d;
+        width: 213px;
+        margin-left: -43px;
+    }
+    .bodyHeading1 h1 {
+        font-size: large;
+        color: #fff;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    .contactUsForm h3 {
+        /* font-size: medium; */
+        width: 100px;
+        margin: 20px 0 0 10px;
+    }
     .contactUsForm {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 200px;
+    }
+    .timeDiv {
+        width: 180px;
+        height: 180px;
+        margin-top: 50px;
+        margin-right: 150px;
+    }
+    .timeDiv h3 {
+        width: 100px;
+        margin-left: 30px;
     }
     .formDiv {
         text-align: center;
         width: 200px;
         height: 280px;
-        margin-right: 220px;
+        margin-right: 150px;
         border-radius: 20px;
     }
     .formDiv1 {
         text-align: center;
         width: 200px;
         height: 280px;
-        margin-right: 100px;
         border-radius: 20px;
+        margin-right: 100px;
     }
-    .form, .form1 {
+    .submitBtn {
+        margin-bottom: 10px;
+    }
+    .form {
+        width: 210px;
+        margin-left: 35px;
+    }
+     .form1 {
         margin-left: 220px;
         height: 200px;
     }
