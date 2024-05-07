@@ -17,7 +17,7 @@
 <body>
 
     <div class="overlay" id="overlay">
-        
+
         <div class="formDiv1">
             <form class="form1">
                 <input type="text" placeholder="Name" class="inputs1" required />
@@ -30,18 +30,45 @@
         </div>
     </div>
 
+    <div class="mobileOverlay" id="mobileOverlay">
+        <div class="navMobileMenu">
+
+            <div class="navListMenu" id="homeMobile" onclick="showMobile()">HOME</div>
+            <div class="navListMenu" id="businessMobile" onclick="showMobile()">BUSINESS OPPORTUNITY</div>
+            <div class="navListMenu" id="webinarMobile" onclick="showMobile()">WEBINAR</div>
+            <div class="navListMenu" id="contactUsMobile" onclick="showMobile()">CONTACT US</div>
+            <button onclick="cancelMobileOverlay()">Cancel</button>
+        </div>
+    </div>
+
+    <div class="navMobile">
+
+        <div class="navMobileContents">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:000-000-0000">(000) 000-0000</a>
+            <div class="menu" onclick="showMobileOverlay()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <!-- <div class="lineDivider"></div> -->
+    </div>
+    <h1 class="mobileHeading">SELF MADE ENTREPRENEUR</h1>
+
     <div class="navbar">
+
         <div class="navbarContainer">
             <h1 class="gradient-heading">SELF MADE ENTREPRENEUR</h1>
             <div class="iconsDiv">
 
                 <div class="navIconsContainer">
                     <div class="navMenuContainer1">
-                        <div class="navListMenu" id="home" onclick="displayContent()">HOME</div>
-                        <div class="navListMenu" id="business" onclick="displayContent()">BUSINESS OPPORTUNITY</div>
-                        <div class="navListMenu" id="webinar" onclick="displayContent()">WEBINAR</div>
-                        <div class="navListMenu" id="subscribe" onclick="displayContent()">SUBSCRIBE</div>
-                        <div class="navListMenu" id="contactUs" onclick="displayContent()">CONTACT US</div>
+                        <div class="navListMenu" id="home" onclick="displayContents()">HOME</div>
+                        <div class="navListMenu" id="business" onclick="displayContents()">BUSINESS OPPORTUNITY</div>
+                        <div class="navListMenu" id="webinar" onclick="displayContents()">WEBINAR</div>
+                        <div class="navListMenu" id="subscribe" onclick="displayContents()">SUBSCRIBE</div>
+                        <div class="navListMenu" id="contactUs" onclick="displayContents()">CONTACT US</div>
                     </div>
                     <div class="navMenuContainer2">
                         <div class="iconsContents1">
@@ -124,7 +151,6 @@
         <div class="testimonialsDiv">
 
             <h1>CLIENT TESTIMONIALS</h1>
-
             <div class="testimonialDiv1">
                 <iframe width="350" height="300" src="https://www.youtube.com/embed/S97xeD0lyxQ"
                     title="TRADE LIKE CRAZY | Live CEO Q &amp; A Opportunity Presentation (POWERFUL)" frameborder="0"
@@ -133,12 +159,9 @@
                 </iframe>
             </div>
 
-            <!-- <div class="sliderContainer"> -->
-
             <div class="swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
+                    
                     <div class="swiper-slide">
                         <div class="swiperContent">
                             SLIDE 1
@@ -197,12 +220,13 @@
 
     <div class="businessOppDiv">
         <div class="businessOppHeading">
-            Alex Villa: Business Opportunity
+            <h1>Alex Villa: Business Opportunity</h1>
         </div>
         <div class="businessOppContainer">
             <div class="businessContents">
                 <h1>CONTENT 1</h1>
-                <button class="getStartedBtn" onclick="showOverlay()">GET STARTED NOW! <i class="fa-solid fa-arrow-right"></i> </button>
+                <button class="getStartedBtn" onclick="showOverlay()">GET STARTED NOW! <i
+                        class="fa-solid fa-arrow-right"></i> </button>
             </div>
 
             <div class="videoConatainer1">
@@ -249,7 +273,8 @@
 
             </div>
 
-            <button class="getStartedBtn" onclick="showOverlay()">GET STARTED NOW! <i class="fa-solid fa-arrow-right"></i> </button>
+            <button class="getStartedBtn" onclick="showOverlay()">GET STARTED NOW! <i
+                    class="fa-solid fa-arrow-right"></i> </button>
 
         </div>
 
@@ -258,11 +283,11 @@
 
     <div class="webinarDiv">
         <div class="bodyHeading">
-            Free Webinar From: Alex Villa
+            <h1>Free Webinar From: Alex Villa</h1>
         </div>
 
         <div class="bodyContainer1">
-            <div class="videoConatainer1">
+            <div class="videoContainer1">
                 <iframe width="500" height="240" src="https://www.youtube.com/embed/S97xeD0lyxQ"
                     title="TRADE LIKE CRAZY | Live CEO Q &amp; A Opportunity Presentation (POWERFUL)" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
@@ -281,11 +306,11 @@
     <div class="contactUsDiv">
 
         <div class="bodyHeading">
-            Contact: Alex Villa
+            <h1>Contact: Alex Villa</h1>
         </div>
         <div class="conatactUsContents">
 
-            <div class="conatactUsForm">
+            <div class="contactUsForm">
 
                 <div>
                     <h3>Content 1</h3>
@@ -317,7 +342,7 @@
     <div class="footer">
 
         <div class="footerHeading">
-            CALL US TODAY! (000) 000 0000
+           <h1> CALL US TODAY! (000) 000 0000</h1>
         </div>
 
         <div class="footerContainer1">
@@ -328,7 +353,7 @@
                 <div class="footerList" id="subscribe" onclick="showContents()">SUBSCRIBE</div>
                 <div class="footerList" id="contactUsFooter" onclick="showContents()">CONTACT US</div>
                 <div class="footerList">Site Map</div>
-                <div class="footerList">Private Policy</div>
+                
             </div>
         </div>
 
@@ -351,7 +376,7 @@
 
             <div class="footerContents">
                 <h3>Find Us On</h3>
-                <div class="iconsContainer">
+                <div class="iconsContainer2">
                     <div class="iconsContents">
                         <a href="https://www.instagram.com/"><img src="./images/iglogo1.png" class="instaLogo" /></a>
                     </div>
@@ -368,8 +393,6 @@
             </div>
 
         </div>
-
-
 
         <div class="footerContainer3">
             <i class="fa-regular fa-copyright"></i>

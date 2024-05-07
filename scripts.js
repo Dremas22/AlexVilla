@@ -27,10 +27,17 @@ const business = document.getElementById('business');
 const webinar = document.getElementById('webinar');
 const contact = document.getElementById('contactUs');
 
+
 const footerHome = document.getElementById('homeFooter');
 const footerBusiness = document.getElementById('businessFooter');
 const footerWebinar = document.getElementById('webinarFooter');
 const footerConatactUs = document.getElementById('contactUsFooter');
+
+const mobileHome = document.getElementById('homeMobile');
+const mobileBusiness = document.getElementById('businessMobile');
+const mobileWebinar = document.getElementById('webinarMobile');
+const mobileConatactUs = document.getElementById('contactUsMobile');
+
 
 const homePage = document.querySelector('.homePageDiv');
 const businessOppContent = document.querySelector('.businessOppDiv')
@@ -47,6 +54,14 @@ window.onload = function () {
 function showOverlay() {
   document.getElementById("overlay").style.display = "flex";
 };
+
+function showMobileOverlay() {
+  document.getElementById('mobileOverlay').style.display = "flex"
+}
+
+function cancelMobileOverlay () {
+  document.getElementById('mobileOverlay').style.display = "none"
+}
 
 function cancelOverlay() {
   document.getElementById("overlay").style.display = "none";
@@ -134,6 +149,46 @@ function showContents() {
 
 }
 
-displayContents(); showContents();
+function showMobile() {
+
+  if (homePage) {
+    mobileHome.addEventListener('click', () => {
+      homePage.style.display = 'block'
+      businessOppContent.style.display = 'none';
+      webinarContent.style.display = 'none';
+      contactUsContent.style.display = 'none';
+    })
+  };
+
+  if (businessOppContent) {
+    mobileBusiness.addEventListener('click', () => {
+      businessOppContent.style.display = 'block';
+      homePage.style.display = 'none';
+      webinarContent.style.display = 'none';
+      contactUsContent.style.display = 'none';
+    })
+  };
+
+  if (webinar) {
+    mobileWebinar.addEventListener('click', () => {
+      webinarContent.style.display = 'block';
+      homePage.style.display = 'none';
+      businessOppContent.style.display = 'none';
+      contactUsContent.style.display = 'none';
+    })
+  };
+
+  if (contact) {
+    mobileConatactUs.addEventListener('click', () => {
+      contactUsContent.style.display = 'block';
+      homePage.style.display = 'none';
+      businessOppContent.style.display = 'none';
+      webinarContent.style.display = 'none';
+    })
+  };
+
+}
+
+displayContents(); showContents(); showMobile();
 
 
