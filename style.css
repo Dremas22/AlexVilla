@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 .overlay {
@@ -226,12 +227,15 @@
     /* Adjust line thickness as needed */
     background-color: #fff;
 }
+
+/* SELFMADE HEADING */
 .mobileHeading {
     display: none;
-    width: 250px;
     color: #1e3799;
     font-size: 45px;
+    padding-top: 50px;
 }
+
 .gradient-heading {
     background-color: lightblue;
     background: -webkit-linear-gradient(to bottom, #B3E0FF 10%, #130f40 100%);
@@ -805,9 +809,9 @@
     }
     .mobileHeading {
         display: block;
-        font-size: 26px;
-        background-color: #000;
-        width: 100%;
+        font-size: 20px;
+        background-color: #000000;
+        padding-left: 10px;
     }
     .navMobileContents {
         padding: 10px;
