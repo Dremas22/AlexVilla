@@ -958,43 +958,48 @@
     .whyDiv h1 {
         font-size: medium;
     }
-    .footer {
+    /* .footer {
         width: 221px;
-    }
+    } */
     .footerHeading h1{
         font-size: medium;
-        width: 150px;
+        /* width: 150px; */
         margin-left: 20px;
         /* margin-right: 20px; */
     }
-    .footerContainer1 {
+    /* .footerContainer1 {
         width: 220px;
-    }
+    } */
     .footerContainer2 {
         display: flex;
         flex-direction: column;
-        width: 220px;
+        /* width: 220px; */
     }
     .footerMenu {
         display: grid;
         grid-template-columns: repeat(3, 0.1fr);
         grid-template-rows: auto;
-        padding-left: 10px;
-        width: 200px;
+        padding-left: 50px;
         height: 120px;
         font-size: 8px;
     }
+
+        /* Get Intouch Container */
     .footerContainer2 {
         height: 300px;
     }
+
+    /* Get Intouch Container */
     .footerContents {
         text-align: center;
         align-items: center;
         margin-right: 100px;
     }
-    .footerContainer3 {
+
+
+    /* .footerContainer3 {
         width: 220px;
-    }
+    } */
     .iconsContainer2 {
         margin-left: 60px;
         text-align: center;
