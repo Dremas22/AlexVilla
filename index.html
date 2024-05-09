@@ -1,61 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SELF MADE ENTREPRENEUR</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
     <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="scripts.js" defer></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="overlay" id="overlay">
-
-        <div class="formDiv1">
-            <form class="form1">
-                <input type="text" placeholder="Name" class="inputs1" required />
-                <input type="email" placeholder="Email" class="inputs1" required />
-                <input type="number" placeholder="Cell Number" class="inputs1" required />
-                <textarea type="text" class="textArea1" placeholder="Type here..." required></textarea>
-            </form>
-            <i class="fa-solid fa-xmark" onclick="cancelOverlay()"></i>
-            <button class="submitBtn1">Submit</button>
-        </div>
+      <div class="formDiv1">
+        <form class="form1">
+          <input type="text" placeholder="Name" class="inputs1" required />
+          <input type="email" placeholder="Email" class="inputs1" required />
+          <input
+            type="number"
+            placeholder="Cell Number"
+            class="inputs1"
+            required
+          />
+          <textarea
+            type="text"
+            class="textArea1"
+            placeholder="Type here..."
+            required
+          ></textarea>
+        </form>
+        <i class="fa-solid fa-xmark" onclick="cancelOverlay()"></i>
+        <button class="submitBtn1">Submit</button>
+      </div>
     </div>
 
     <div class="mobileOverlay" id="mobileOverlay">
-        <div class="navMobileMenu">
-
-            <div class="navListMenu" id="homeMobile" onclick="showMobile()">HOME</div>
-            <div class="navListMenu" id="businessMobile" onclick="showMobile()">BUSINESS OPPORTUNITY</div>
-            <div class="navListMenu" id="webinarMobile" onclick="showMobile()">WEBINAR</div>
-            <div class="navListMenu" id="contactUsMobile" onclick="showMobile()">CONTACT US</div>
-            <button onclick="cancelMobileOverlay()">Cancel</button>
+      <div class="navMobileMenu">
+        <div class="navListMenu" id="homeMobile" onclick="showMobile()">
+          HOME
         </div>
+        <div class="navListMenu" id="businessMobile" onclick="showMobile()">
+          BUSINESS OPPORTUNITY
+        </div>
+        <div class="navListMenu" id="webinarMobile" onclick="showMobile()">
+          WEBINAR
+        </div>
+        <div class="navListMenu" id="contactUsMobile" onclick="showMobile()">
+          CONTACT US
+        </div>
+        <button onclick="cancelMobileOverlay()">Cancel</button>
+      </div>
     </div>
 
     <div class="navMobile">
-
-        <div class="navMobileContents">
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel:000-000-0000">(000) 000-0000</a>
-            <div class="menu" onclick="showMobileOverlay()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+      <div class="navMobileContents">
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:000-000-0000">(000) 000-0000</a>
         </div>
-        <!-- <div class="lineDivider"></div> -->
+
+        <div class="menu" onclick="showMobileOverlay()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+      <!-- <div class="lineDivider"></div> -->
     </div>
     <div class="mobileHeading">
-    <h1>SELF MADE ENTREPRENEUR</h1>
+      <h1>SELF MADE ENTREPRENEUR</h1>
     </div>
 
     <div class="navbar">
@@ -107,10 +133,7 @@
 
         <div class="hero">
 
-            <img src="./images/bg2.jpg" alt="BGimage" />
-        </div>
-
-        <div class="infoDiv1">
+             <div class="infoDiv1">
 
             <div class="infoSubDiv">
                 <h2>Content 1</h2>
@@ -126,6 +149,9 @@
                 <button class="subscribeBtn" onclick="showOverlay()">SUBSCRIBE NOW WITH ALEX VILLA </button>
             </div>
         </div>
+        </div>
+
+       
 
         <div class="features">
             <h1 class="featuresHeader">FEATURED ON</h1>
@@ -201,16 +227,16 @@
         </div>
 
         <div class="imagesContainer">
-            <div class="imagesGrid1">
+           
                 <div class="imagesContent">IMAGE 1</div>
                 <div class="imagesContent">IMAGE 2</div>
                 <div class="imagesContent">IMAGE 3</div>
                 <div class="imagesContent">IMAGE 4</div>
-            </div>
-            <div class="imagesGrid2">
+           
+        
                 <div class="imagesContent">IMAGE 5</div>
                 <div class="imagesContent">IMAGE 7</div>
-            </div>
+    
         </div>
 
         <div class="whyDiv">
@@ -402,9 +428,8 @@
             <span>All Rights Reserved</span>
         </div>
 
-    </div>
+    </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
