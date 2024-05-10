@@ -149,6 +149,7 @@ body {
 }
 .homePageDiv {
   text-align: center;
+  padding-top: 100px;
   /* display: none */
 }
 .navbarContainer {
@@ -376,6 +377,11 @@ body {
   margin-top: 30px;
   color: #2f3542;
 }
+
+.businessOppDiv {
+  padding-top: 105px;
+}
+
 .bodyHeading1 h1,
 .businessOppHeading h1 {
   text-align: center;
@@ -390,6 +396,10 @@ body {
 .contactUsContents {
   display: flex;
   margin: 20px 0 0 150px;
+}
+
+.webinarDiv {
+padding-top: 100px;
 }
 .webinarContents,
 .businessContents,
@@ -699,6 +709,11 @@ body {
 .whyDiv h1 {
   padding-top: 40px;
 }
+
+.contactUsDiv {
+  padding-top: 105px;
+}
+
 .email-container {
     position: fixed;  /* Make the container fixed to the viewport */
     bottom: 0;        /* Position it at the bottom */
