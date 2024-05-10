@@ -9,10 +9,10 @@ body {
   margin: 0;
   padding: 0;
 }
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .overlay {
   position: fixed;
@@ -137,13 +137,13 @@ body {
   transition: trnasform 0.3ms ease-out;
 }
 .navbar {
+  position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 1000;
   width: 100%;
   border-bottom: lightgray;
   background-color: rgba(211, 211, 211, 0.5);
-  /* position: fixed;
-    top: 0; 
-    left: 0; 
-    z-index: 1000 */
 
   /* Use rgba for transparency */
 }
