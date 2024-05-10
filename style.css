@@ -64,30 +64,36 @@ body {
 .formDiv1 {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  text-align: center;
   align-items: center;
   justify-content: center;
   width: 450px;
   border: 1px solid #a5b1c2;
   box-shadow: 0 0 5px 0 rgba(165, 177, 194, 10);
-  height: 430px;
-  border-radius: 55px;
+  border-radius: 10px;
   background-color: #46598d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
 }
 .form1 {
-  margin-top: 10px;
   display: flex;
+  gap: 20px;
   flex-direction: column;
-  width: 400px;
+}
+.close-icon {
+  position: absolute; /* Absolute positioning for top-right corner */
+  top: 10px;
+  right: 10px;
+  cursor: pointer; /* Make the icon clickable */
+  color: #ccc; /* Light color for the icon */
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
 }
 .inputs1 {
-  margin: 5px;
-  height: 40px;
   border: 1px solid #a5b1c2;
   border-radius: 5px;
   color: #2f3542;
   font-size: medium;
+  width: 100%;
 }
 .inputs1::placeholder {
   padding-left: 7px;
@@ -96,7 +102,7 @@ body {
 }
 .textArea1 {
   margin: 5px;
-  height: 160px;
+  height: auto;
   border: 1px solid #a5b1c2;
   border-radius: 5px;
   color: #2f3542;
@@ -466,8 +472,9 @@ body {
   height: 40px;
   border-radius: 5px;
   border: none;
-  background-color: #a5b1c2;
-  color: #1e3799;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
 }
 .submitBtn:hover {
   cursor: pointer;
@@ -854,6 +861,23 @@ body {
   .navMobileMenu {
     margin-right: 100px;
   }
+  .close-icon {
+    position: absolute;  /* Absolute positioning for precise placement */
+    top: 10px;  /* Adjust for desired top margin from the edge */
+    right: 10px;  /* Adjust for desired right margin from the edge */
+    cursor: pointer;  /*  Make the icon clickable */
+    background-color: #000;
+    color: white;
+    border: white 2px solid;
+    font-size: large;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
   .menu {
     /* margin: 0 50px 0 auto; */
   }
@@ -1156,11 +1180,16 @@ body {
     border-radius: 20px;
   }
   .formDiv1 {
-    text-align: center;
-    width: 200px;
-    height: 280px;
-    border-radius: 20px;
-    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 60%;
+    gap: 10px;
+    position: relative;
+    /* width: 329px; */
+    /* height: 280px; */
+    border-radius: 5px;
   }
   .submitBtn {
     margin-bottom: 10px;
@@ -1170,8 +1199,10 @@ body {
     margin-left: 35px;
   }
   .form1 {
-    margin-left: 220px;
-    height: 200px;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
   .inputs,
   .inputs1 {
