@@ -699,6 +699,30 @@ body {
 .whyDiv h1 {
   padding-top: 40px;
 }
+.email-container {
+    position: fixed;  /* Make the container fixed to the viewport */
+    bottom: 0;        /* Position it at the bottom */
+    left: 0;          /* Align it to the left (optional, adjust for centering) */
+    right: 0;         /* Align it to the right (optional, adjust for centering) */
+    width: 100%;      /* Stretch the container across the entire viewport */
+    display: flex;     /* Arrange buttons horizontally (optional, adjust for stacking) */
+    justify-content: center;  /* Center buttons horizontally (optional) */
+    align-items: flex-end; 
+}
+
+.email-button {
+    display: none;
+    border: none;
+    background-color: #c50101;
+    color: white;             /* Text color */
+    padding: 15px 32px;       /* Some padding */
+    border-radius: 25px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
 .footer {
   width: 100%;
   height: 350px;
@@ -792,408 +816,398 @@ body {
   margin-left: 70px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 580px) {
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .navbar {
+    display: none;
+  }
+  .navMobile {
+    display: block;
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .mobileHeading {
+    display: flex;
+    font-size: 20px;
+    background-color: #000000;
+    position: relative;
+    top: 20px;
+    padding-left: 10px;
+  }
+  .email-button{
+    display: block;
+  }
+  .navMobileContents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .navMobileContent.fa-phone {
+    margin-left: 20px;
+  }
+  .navMobileContents a {
+    font-size: small;
+  }
+  .navMobileMenu {
+    margin-right: 100px;
+  }
+  .menu {
+    /* margin: 0 50px 0 auto; */
+  }
 
-    .navbar {
-        display: none;
-    }
-    .navMobile {
-        
-        display: block;
-        background-color: #000;
-        width: 100%;
-        /* position: fixed; 
-        top: 0; 
-        left: 0; 
-        z-index: 2000; */
-    }
-    .mobileHeading {
-        display: block;
-        font-size: 26px;
-        background-color: #000;
-        width: 100%;
-    }
-    .navMobileContents {
-        padding: 10px;
-        height: 30px;
-        width: 80%;
-        align-items: center;
-    }
-    .navMobileContent.fa-phone {
-        margin-left: 20px;
-    }
-    .navMobileContents a {
-        font-size: small;
-    }
-    .navMobileMenu {
-        margin-right: 100px;
-    }
-    .menu {
-        margin: 0 50px 0 auto;
-    }
-    .hero {
-        margin-top: 120px;
-        width: 100%;
-        margin-left: -30px;
-    }
-    .infoDiv1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: auto;
-        height: 450px;
-        margin: 510px 0 0 0;
-        background-color: #fff;
-        border: none;
-    }
-    .subscribeBtn {
-        width: 210px;
-        font-size: 12px;
-        height: 40px;
-        margin-right: 102px;
-    }
-    .subscribeBtn1 {
-        width: 210px;
-        font-size: 12px;
-        height: 40px;
-        margin-right: 20px;
-    }
-    .infoSubDiv {
-        text-align: center;
-    }
-    .infoSubDiv h2 {
-        margin-right: 120px;
-        text-align: center;
-    }
-    .infoSubDiv h1 {
-        margin-right: 95px;
-    }
-    .features {
-        width: 212px;
-        margin-left: 6px;
-    }
-    .featuresContent {
-        text-align: center;
-        width: 300px;
-        margin-right: 30px;
-    }
-    .featuresContent h2 {
-        margin-right: 80px;
-    }
-    .featuresHeader {
-        font-size: 16px;
-    }
-    .featuresContent iframe {
-        height: 200px;
-        width: 200px;
-        margin-right: 20px;
-    }
-    .featuresDiv2 {
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 0 50px;
-    }
-    .testimonialDiv1 iframe {
-        height: 200px;
-        width: 200px;
-    }
-    .testimonialsDiv h1 {
-        font-size: large;
-    }
-    .testimonialsDiv {
-        width: 300px;
-        margin-left: -35px;
-    }
-    .swiper {
-        width: 300px;
-    }
-    .swiper-slide {
-        width: 100%;
-        margin-right: 200px;
-    }
-    .swiperContent {
-        margin-right: 100px;
-        width: 180px;
-        text-align: center;
-    }
-    .btnReviews {
-        font-size: medium;
-        border: 2px solid #6a89cc;
-        width: 140px;
-        height: 35px;
-    }
-    .fa-circle-chevron-right,
-    .fa-circle-chevron-left {
-        font-size: 20px;
-    }
-    .services {
-        text-align: center;
-        width: 210px;
-        margin-left: 10px;
-    }
-    .imagesContainer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        width: 210px;
-        margin-left: 5px;
-        background-color: #fff;
-    }
-    .imagesGrid1, .imagesGrid2 {
-        display: flex;
-        flex-direction: column;
-    }
-    .imagesGrid1 {
-        margin-right: 90px;
-    }
-    .imagesGrid2 {
-        margin-right: 485px;
-    }
-    .imagesContent {
-        width: 200px;
-        height: 250px;
-    }
-    .whyDiv {
-        width: 210px;
-        margin-left: 3px;
-    }
-    .whyDiv h1 {
-        font-size: medium;
-    }
-    .footer {
-        width: 221px;
-    }
-    .footerHeading h1{
-        font-size: medium;
-        width: 150px;
-        margin-left: 20px;
-        /* margin-right: 20px; */
-    }
-    .footerContainer1 {
-        width: 220px;
-    }
-    .footerContainer2 {
-        display: flex;
-        flex-direction: column;
-        width: 220px;
-    }
-    .footerMenu {
-        display: grid;
-        grid-template-columns: repeat(3, 0.1fr);
-        grid-template-rows: auto;
-        padding-left: 10px;
-        width: 200px;
-        height: 120px;
-        font-size: 8px;
-    }
-    .footerContainer2 {
-        height: 300px;
-    }
-    .footerContents {
-        text-align: center;
-        align-items: center;
-        margin-right: 100px;
-    }
-    .footerContainer3 {
-        width: 220px;
-    }
-    .iconsContainer2 {
-        margin-left: 60px;
-        text-align: center;
-    }
-    .businessOppDiv {
-        height: 1300px;
-    }
-    .businessOppContainer {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;   
-    }
-    .businessOppHeading {
-        background-color:#46598d;
-        width: 213px;
-        margin-left: 1px;
-    }
-    .businessOppHeading h1 {
-        font-size: medium;
-        margin-left: 20px;
-        width: 150px;
-    }
-    .businessContents h1 {
-        margin-left: 30px;
-    }
-    .businessContents {
-        text-align: center;
-        width: 190px;
-        margin-left: 5px;
-    }
-    .videoContainer1 iframe {
-        width: 170px;
-        height: 110px;
-        margin-left: 7px;
-    }
-    .whatDiv {
-        width: 210px;
-    }
-    .whatGrid {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;
-        
-    }
-    .whatGridContents {
-        margin: 3px;
-        width: 180px;
-        height: 150px;
-    }
-    .whatDiv {
-        margin-left: 10px;
-        width: 250px;
-        background-color: #fff;
-    }
-    .businessContents h1 {
-        font-size: large;
-        margin-right: 50px;
-    }
-    .whatDiv h1 {
-        font-size: large;
-        margin-right: 50px;
-    }
-    .getStartedBtn {
-        width: 180px;
-        height: 60px;
-        font-size: 15px;
-        margin-right: 50px;
-    }
-    .bodyContainer1 {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        margin-right: 250px;
-        ;
-    }
-    .bodyHeading {
-        background-color: #46598d;
-        width: 213px;
-        margin-left: 2px;
-    }
-    .bodyHeading h1 {
-        font-size: large;
-        width: 150px;
-        margin-left: 20px;
-    }
-    .webinarContents {
-        width: 200px;
-        margin-right: 130px;
-    }
-    .videoContainer1 {
-        margin-right: 80px;
-    }
-    .videoContainer1 iframe {
-        width: 180px;
-    }
-    .contactUsDiv {
-        margin-left: 50px;
-    }
-    .contactUsContents {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-left: 10px;
-        width: 211px;
-    }
-    .bodyHeading1 {
-        background-color: #46598d;
-        width: 213px;
-        margin-left: -43px;
-    }
-    .bodyHeading1 h1 {
-        font-size: large;
-        color: #fff;
-        font-weight: bold;
-        margin-left: 30px;
-    }
-    .contactUsForm h3 {
-        /* font-size: medium; */
-        width: 100px;
-        margin: 20px 0 0 10px;
-    }
-    .contactUsForm {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 200px;
-    }
-    .timeDiv {
-        width: 180px;
-        height: 180px;
-        margin-top: 50px;
-        margin-right: 150px;
-    }
-    .timeDiv h3 {
-        width: 100px;
-        margin-left: 30px;
-    }
-    .formDiv {
-        text-align: center;
-        width: 200px;
-        height: 280px;
-        margin-right: 150px;
-        border-radius: 20px;
-    }
-    .formDiv1 {
-        text-align: center;
-        width: 200px;
-        height: 280px;
-        border-radius: 20px;
-        margin-right: 100px;
-    }
-    .submitBtn {
-        margin-bottom: 10px;
-    }
-    .form {
-        width: 210px;
-        margin-left: 35px;
-    }
-     .form1 {
-        margin-left: 220px;
-        height: 200px;
-    }
-    .inputs, .inputs1 {
-        width: 160px;
-        height: 30px;
-    }
-    .textArea, .textArea1 {
-        width: 160px;
-        height: 60px
-    }
-    .inputs::placeholder {
-        font-size: small;
-    }
-    .inputs1::placeholder {
-        font-size: small;
-    }
-    .textArea::placeholder, .textArea1::placeholder {
-        font-size: medium;
-    }
-    .submitBtn, .submitBtn1 {
-        width: 70px;
-        height: 30px;
-        font-size: 17px;
-    }
-    .contactUsForm h3 {
-        margin-right: 200px
-    }
-    .timeDiv h3 {
-        margin-right: 240px;
-    }
-    .fa-xmark {
-        margin-right: 250px;
-        margin-top: 150px;
-        font-size: medium;
-    }
+  .hero {
+    background-image: url(/images/bg2.jpg);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+  }
+  .infoDiv1 {
+    /* background-color: #fff; */
+    margin: 30px;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .subscribeBtn {
+    width: 210px;
+    font-size: 12px;
+    height: 40px;
+  }
+  .subscribeBtn1 {
+    width: 210px;
+    font-size: 12px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  .infoSubDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .infoSubDiv h2 {
+  }
+  .infoSubDiv h1 {
+  }
+  .features {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featuresHeader {
+    font-size: 16px;
+  }
+  .featuresContent iframe {
+    height: 200px;
+    width: 200px;
+    margin-right: 0;
+  }
+  .featuresDiv2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .testimonialDiv1 iframe {
+    height: 200px;
+    width: 200px;
+  }
+  .testimonialsDiv h1 {
+    font-size: large;
+  }
+  .testimonialsDiv {
+  }
+  .swiper {
+    width: 300px;
+  }
+  .swiper-slide {
+    width: 100%;
+    margin-right: 200px;
+  }
+  .swiperContent {
+    margin-right: 100px;
+    width: 180px;
+    text-align: center;
+  }
+  .btnReviews {
+    font-size: medium;
+    border: 2px solid #6a89cc;
+    width: 140px;
+    height: 35px;
+  }
+  .fa-circle-chevron-right,
+  .fa-circle-chevron-left {
+    font-size: 20px;
+  }
+  .services {
+    text-align: center;
+  }
+  .imagesContainer {
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    gap: 0px;
+  }
+  .imagesGrid1,
+  .imagesGrid2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagesGrid1 {
+    margin-right: 90px;
+  }
+  .imagesGrid2 {
+    margin-right: 485px;
+  }
+  .imagesContent {
+    width: 200px;
+    height: 250px;
+  }
+  .whyDiv {
+  }
+  .whyDiv h1 {
+    font-size: medium;
+  }
+  .footer {
+  }
+
+  .footerHeading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footerHeading h1 {
+    font-size: medium;
+    width: 150px;
+  }
+  .footerContainer1 {
+    display: flex;
+    justify-content: center;
+  }
+  .footerContainer2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerMenu {
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    grid-template-rows: auto;
+    padding-left: 10px;
+    width: 200px;
+    height: 120px;
+    font-size: 8px;
+  }
+  .footerContainer2 {
+    height: 300px;
+  }
+  .footerContents {
+    text-align: center;
+    align-items: center;
+    margin-right: 100px;
+  }
+  .footerContainer3 {
+  }
+  .iconsContainer2 {
+    margin-left: 60px;
+    text-align: center;
+  }
+  .businessOppDiv {
+    height: 1300px;
+  }
+  .businessOppContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .businessOppHeading {
+    background-color: #46598d;
+    width: 213px;
+    margin-left: 1px;
+  }
+  .businessOppHeading h1 {
+    font-size: medium;
+    margin-left: 20px;
+    width: 150px;
+  }
+  .businessContents h1 {
+    margin-left: 30px;
+  }
+  .businessContents {
+    text-align: center;
+    width: 190px;
+    margin-left: 5px;
+  }
+  .videoContainer1 iframe {
+    width: 170px;
+    height: 110px;
+    margin-left: 7px;
+  }
+  .whatDiv {
+    width: 210px;
+  }
+  .whatGrid {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .whatGridContents {
+    margin: 3px;
+    width: 180px;
+    height: 150px;
+  }
+  .whatDiv {
+    margin-left: 10px;
+    width: 250px;
+    background-color: #fff;
+  }
+  .businessContents h1 {
+    font-size: large;
+    margin-right: 50px;
+  }
+  .whatDiv h1 {
+    font-size: large;
+    margin-right: 50px;
+  }
+  .getStartedBtn {
+    width: 180px;
+    height: 60px;
+    font-size: 15px;
+    margin-right: 50px;
+  }
+  .bodyContainer1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-right: 250px;
+  }
+  .bodyHeading {
+    background-color: #46598d;
+    width: 213px;
+    margin-left: 2px;
+  }
+  .bodyHeading h1 {
+    font-size: large;
+    width: 150px;
+    margin-left: 20px;
+  }
+  .webinarContents {
+    width: 200px;
+    margin-right: 130px;
+  }
+  .videoContainer1 {
+    margin-right: 80px;
+  }
+  .videoContainer1 iframe {
+    width: 180px;
+  }
+  .contactUsDiv {
+    margin-left: 50px;
+  }
+  .contactUsContents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    width: 211px;
+  }
+  .bodyHeading1 {
+    background-color: #46598d;
+    width: 213px;
+    margin-left: -43px;
+  }
+  .bodyHeading1 h1 {
+    font-size: large;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 30px;
+  }
+  .contactUsForm h3 {
+    /* font-size: medium; */
+    width: 100px;
+    margin: 20px 0 0 10px;
+  }
+  .contactUsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+  }
+  .timeDiv {
+    width: 180px;
+    height: 180px;
+    margin-top: 50px;
+    margin-right: 150px;
+  }
+  .timeDiv h3 {
+    width: 100px;
+    margin-left: 30px;
+  }
+  .formDiv {
+    text-align: center;
+    width: 200px;
+    height: 280px;
+    margin-right: 150px;
+    border-radius: 20px;
+  }
+  .formDiv1 {
+    text-align: center;
+    width: 200px;
+    height: 280px;
+    border-radius: 20px;
+    margin-right: 100px;
+  }
+  .submitBtn {
+    margin-bottom: 10px;
+  }
+  .form {
+    width: 210px;
+    margin-left: 35px;
+  }
+  .form1 {
+    margin-left: 220px;
+    height: 200px;
+  }
+  .inputs,
+  .inputs1 {
+    width: 160px;
+    height: 30px;
+  }
+  .textArea,
+  .textArea1 {
+    width: 160px;
+    height: 60px;
+  }
+  .inputs::placeholder {
+    font-size: small;
+  }
+  .inputs1::placeholder {
+    font-size: small;
+  }
+  .textArea::placeholder,
+  .textArea1::placeholder {
+    font-size: medium;
+  }
+  .submitBtn,
+  .submitBtn1 {
+    width: 70px;
+    height: 30px;
+    font-size: 17px;
+  }
+  .contactUsForm h3 {
+    margin-right: 200px;
+  }
+  .timeDiv h3 {
+    margin-right: 240px;
+  }
+  .fa-xmark {
+    margin-right: 250px;
+    margin-top: 150px;
+    font-size: medium;
+  }
 }
