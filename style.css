@@ -1028,6 +1028,7 @@ padding-top: 100px;
   }
   .businessOppDiv {
     height: 1300px;
+    margin-left: 60px;
   }
   .businessOppContainer {
     display: flex;
@@ -1099,12 +1100,17 @@ padding-top: 100px;
   .bodyHeading {
     background-color: #46598d;
     width: 213px;
-    margin-left: 2px;
+    text-align: center;
+    margin-left: 1px;
   }
   .bodyHeading h1 {
-    font-size: large;
+    font-size: medium;
+    margin-left: 30px;
     width: 150px;
-    margin-left: 20px;
+    color: #fff
+  }
+  .webinarDiv {
+    margin-left: 60px;
   }
   .webinarContents {
     width: 200px;
@@ -1130,13 +1136,13 @@ padding-top: 100px;
   .bodyHeading1 {
     background-color: #46598d;
     width: 213px;
-    margin-left: -43px;
+    margin-left: 20px;
   }
   .bodyHeading1 h1 {
     font-size: large;
     color: #fff;
     font-weight: bold;
-    margin-left: 30px;
+    /* margin-left: 40px; */
   }
   .contactUsForm h3 {
     /* font-size: medium; */
