@@ -874,6 +874,7 @@ padding-top: 100px;
     background-size: cover;
     width: 100%;
     display: flex;
+    margin-top: -80px;
   }
   .infoDiv1 {
     /* background-color: #fff; */
