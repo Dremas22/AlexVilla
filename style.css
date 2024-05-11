@@ -137,10 +137,6 @@ body {
   transition: trnasform 0.3ms ease-out;
 }
 .navbar {
-  position: fixed;
-    top: 0; 
-    left: 0; 
-    z-index: 1000;
   width: 100%;
   border-bottom: lightgray;
   background-color: rgba(211, 211, 211, 0.5);
@@ -852,7 +848,7 @@ body {
     font-size: small;
   }
   .navMobileMenu {
-    margin-right: 100px;
+    /* margin-right: 50px; */
   }
   .menu {
     /* margin: 0 50px 0 auto; */
@@ -1150,37 +1146,37 @@ body {
   }
   .formDiv {
     text-align: center;
-    width: 200px;
+    width: 320px;
     height: 280px;
-    margin-right: 150px;
+    margin-right: 50px;
     border-radius: 20px;
   }
   .formDiv1 {
     text-align: center;
-    width: 200px;
+    width: 320px;
     height: 280px;
     border-radius: 20px;
-    margin-right: 100px;
+    /* margin-right: 50px; */
   }
   .submitBtn {
     margin-bottom: 10px;
   }
   .form {
-    width: 210px;
-    margin-left: 35px;
+    width: 200px;
+    margin-right: 70px;
   }
   .form1 {
-    margin-left: 220px;
+    margin-left: 130px;
     height: 200px;
   }
   .inputs,
   .inputs1 {
-    width: 160px;
+    width: 260px;
     height: 30px;
   }
   .textArea,
   .textArea1 {
-    width: 160px;
+    width: 260px;
     height: 60px;
   }
   .inputs::placeholder {
@@ -1206,8 +1202,12 @@ body {
     margin-right: 240px;
   }
   .fa-xmark {
-    margin-right: 250px;
+    margin-right: 140px;
     margin-top: 150px;
     font-size: medium;
+  }
+  .email-button:hover {
+    color:#46598d;
+    cursor: pointer;
   }
 }
