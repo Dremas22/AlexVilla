@@ -137,10 +137,6 @@ body {
   transition: trnasform 0.3ms ease-out;
 }
 .navbar {
-  position: fixed;
-    top: 0; 
-    left: 0; 
-    z-index: 1000;
   width: 100%;
   border-bottom: lightgray;
   background-color: rgba(211, 211, 211, 0.5);
@@ -883,7 +879,7 @@ padding-top: 100px;
     font-size: small;
   }
   .navMobileMenu {
-    margin-right: 100px;
+    /* margin-right: 50px; */
   }
   .menu {
     /* margin: 0 50px 0 auto; */
@@ -894,6 +890,7 @@ padding-top: 100px;
     background-size: cover;
     width: 100%;
     display: flex;
+    margin-top: -80px;
   }
   .infoDiv1 {
     /* background-color: #fff; */
@@ -1048,6 +1045,7 @@ padding-top: 100px;
   }
   .businessOppDiv {
     height: 1300px;
+    margin-left: 60px;
   }
   .businessOppContainer {
     display: flex;
@@ -1119,12 +1117,17 @@ padding-top: 100px;
   .bodyHeading {
     background-color: #46598d;
     width: 213px;
-    margin-left: 2px;
+    text-align: center;
+    margin-left: 1px;
   }
   .bodyHeading h1 {
-    font-size: large;
+    font-size: medium;
+    margin-left: 30px;
     width: 150px;
-    margin-left: 20px;
+    color: #fff
+  }
+  .webinarDiv {
+    margin-left: 60px;
   }
   .webinarContents {
     width: 200px;
@@ -1150,13 +1153,13 @@ padding-top: 100px;
   .bodyHeading1 {
     background-color: #46598d;
     width: 213px;
-    margin-left: -43px;
+    margin-left: 20px;
   }
   .bodyHeading1 h1 {
     font-size: large;
     color: #fff;
     font-weight: bold;
-    margin-left: 30px;
+    /* margin-left: 40px; */
   }
   .contactUsForm h3 {
     /* font-size: medium; */
@@ -1181,37 +1184,37 @@ padding-top: 100px;
   }
   .formDiv {
     text-align: center;
-    width: 200px;
+    width: 320px;
     height: 280px;
-    margin-right: 150px;
+    margin-right: 50px;
     border-radius: 20px;
   }
   .formDiv1 {
     text-align: center;
-    width: 200px;
+    width: 320px;
     height: 280px;
     border-radius: 20px;
-    margin-right: 100px;
+    /* margin-right: 50px; */
   }
   .submitBtn {
     margin-bottom: 10px;
   }
   .form {
-    width: 210px;
-    margin-left: 35px;
+    width: 200px;
+    margin-right: 70px;
   }
   .form1 {
-    margin-left: 220px;
+    margin-left: 130px;
     height: 200px;
   }
   .inputs,
   .inputs1 {
-    width: 160px;
+    width: 260px;
     height: 30px;
   }
   .textArea,
   .textArea1 {
-    width: 160px;
+    width: 260px;
     height: 60px;
   }
   .inputs::placeholder {
@@ -1237,8 +1240,12 @@ padding-top: 100px;
     margin-right: 240px;
   }
   .fa-xmark {
-    margin-right: 250px;
+    margin-right: 140px;
     margin-top: 150px;
     font-size: medium;
+  }
+  .email-button:hover {
+    color:#46598d;
+    cursor: pointer;
   }
 }
