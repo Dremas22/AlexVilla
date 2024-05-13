@@ -835,6 +835,22 @@ padding-top: 100px;
   .navbar {
     display: none;
   }
+
+  .homePageDiv {
+    padding-top: 10px;
+  }
+
+  .businessOppDiv {
+    padding-top: 21px;
+  }
+
+  .webinarDiv {
+    padding-top: 21px;
+    }
+    .contactUsDiv {
+      padding-top: 21px;
+    }
+
   .navMobile {
     display: block;
     background-color: #000;
